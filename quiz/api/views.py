@@ -27,3 +27,4 @@ def get_question(request):
             response = response.json()
             return Response(response)
         return Response(serializer.errors)
+    return Response("Bad request")
