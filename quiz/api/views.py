@@ -1,13 +1,10 @@
-from django.http import HttpResponse
-from django.views.decorators.csrf import csrf_exempt
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
 import requests
 
 from api.models import Question
-from api.serializers import QuestionSerializer, QuizSerializer
-from pprint import pprint
+from api.serializers import QuizSerializer
 
 
 @api_view(['POST'])
