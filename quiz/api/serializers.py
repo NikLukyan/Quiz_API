@@ -1,12 +1,18 @@
 from rest_framework import serializers
+from rest_framework.serializers import ModelSerializer
+
+from .models import Question
 
 
-class QuestionSerializer(serializers.Serializer):
-    # Описываем поля и их типы
-    id = serializers.IntegerField()
-    question = serializers.CharField()
-    answer = serializers.CharField()
-    created_at = serializers.TimeField()
+class QuestionSerializer(ModelSerializer):
+    class Meta:
+        model = Question
+        fields = (
+            "id",
+            "question",
+            "answer",
+            "created_at",
+        )
 
 
 class QuizSerializer(serializers.Serializer):
