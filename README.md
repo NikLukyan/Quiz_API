@@ -14,6 +14,10 @@
 ```
 git clone https://github.com/NikLukyan/Quiz_API.git
 ``` 
+- Перейдите в директорию Quiz_API:
+```
+cd Quiz_API
+```
 - Из директории Quiz_API выполните команды для запуска контейнеров, выполнения миграций и сбора статики:
 ```
 docker-compose up -d --build
