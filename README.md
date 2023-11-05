@@ -1,4 +1,6 @@
 # Quiz_API
+![Quiz_API](https://github.com/NikLukyan/Quiz_API/actions/workflows/main.yml/badge.svg)
+[![Imports: isort](https://img.shields.io/badge/%20imports-isort-%231674b1?style=flat&labelColor=ef8336)](https://pycqa.github.io/isort/)
 
 ### Описание
 Благодаря этому проекту можно запрашивать, получать и сохранять в базу данных англоязычные вопросы для викторин.
